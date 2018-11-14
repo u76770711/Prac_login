@@ -4,7 +4,7 @@ let webdriver = require('selenium-webdriver'),
  let waitTime = 10000;
 
    // navigate to login page for internet banking 
-   describe('Login LLoyds website and selct a product', function () {
+   describe('Login Test website and selct a product', function () {
        this.timeout(50000);
        chromeCapabilities = webdriver.Capabilities.chrome();
        //setting chrome options to start the browser fully maximized
@@ -14,8 +14,8 @@ let webdriver = require('selenium-webdriver'),
        chromeCapabilities.set('chromeOptions', chromeOptions);
        let browser = new webdriver.Builder().withCapabilities(chromeCapabilities).build();
 
-      // it('navigate to LLoyds homepage', function (done){
-        browser.get('https://www.lloydsbank.com/online-banking/home.asp');
+      // it('navigate to Test homepage', function (done){
+        browser.get('https://www.Test.com/online-banking/home.asp');
        //   done();
        //});
        
@@ -28,7 +28,7 @@ let webdriver = require('selenium-webdriver'),
        });
      
        /*it('should search for logon menu and click Personnel', function () {
-            var loginUrl = "https://online.lloydsbank.co.uk/personal/logon/login.jsp?WT.ac=PLO0512";
+            var loginUrl = "https://online.Test.co.uk/personal/logon/login.jsp?WT.ac=PLO0512";
             // let loginLink = browser.wait(until.elementLocated(By.xpath("//ul[contains(@class, 'primary-header-links')]/li[4]// header[contains(@class,'primary-header-btn logon') ]")));
             let loginLink = browser.wait(until.elementLocated(By.xpath("//a[@href='" + loginUrl + "']")));
             loginLink.click().then(function () {
