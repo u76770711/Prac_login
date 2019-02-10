@@ -15,7 +15,7 @@ let webdriver = require('selenium-webdriver'),
        let browser = new webdriver.Builder().withCapabilities(chromeCapabilities).build();
 
       // it('navigate to Test homepage', function (done){
-        browser.get('https://www.Test.com/online-banking/home.asp');
+        browser.get('https://www.Test.com/online-banking/');
        //   done();
        //});
        
